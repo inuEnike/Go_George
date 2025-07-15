@@ -14,6 +14,21 @@ Started learning go today
 According to my own understanding, Pointers are variabe that store the address of another variable,
 As a variable stores data into the memory location, Pointers allow access to the memory address of that data
 
+```go
+
+    var name string = "George"
+    var ptr *string = &name
+
+    fmt.Println(name)
+    fmt.Println(prt)
+
+
+    /* Output:
+        George
+        0xc000010200
+    */
+```
+
 ### Functions
 
 function is a block of code that can be reusable
@@ -21,6 +36,7 @@ eg instead of having to define names of 100 pupils in a class you can create a f
 
 //main.go
 
+```go
 package main
 
 import "fmt"
@@ -42,3 +58,5 @@ func Pupil (name string) {
     fmt.Println(pupilName)
 
 }
+
+```
